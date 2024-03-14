@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imágenes</title>
+<style>
+  /* Estilos para centrar el formulario */
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alineación vertical */
+    background-color: #f2f2f2; /* Color de fondo claro */
+  }
+
+  .form-container {
+    width: 500px; /* Ancho del contenedor del formulario */
+    flex-direction: column;
+    align-items: center;
+    background-color: white; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno del formulario */
+    border-radius: 10px; /* Bordes redondeados del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+  }
+
+  /* Estilos para el título del formulario */
+  h1 {
+    margin-bottom: 20px; /* Espacio inferior del título */
+  }
+
+  /* Estilos para los campos de entrada y etiquetas */
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espacio entre campos de entrada */
+  }
+
+  .input-container label {
+    width: 120px; /* Ancho fijo para la etiqueta */
+    margin-right: 10px; /* Espacio entre etiqueta y entrada */
+  }
+
+  .input-container input {
+    flex: 1; /* Ocupar el espacio restante */
+  }
+</style>
+</head>
+<body>
+
+<!-- Contenedor para el formulario -->
+<div class="form-container">
+  <!-- Título del formulario -->
+  <h1>Imágenes</h1>
+  
+  <!-- Formulario -->
+  <form action="listas.html">
+    <!-- Campos de imagen -->
+    <div class="input-container">
+      <label for="imagen1">VISUAL BASIC:</label>
+      <img src="basic.jpg" alt="logo basic" width="100" height="100">
+      <a href="https://visualstudio.microsoft.com/es/">https://visualstudio.microsoft.com/es/</a>
+    </div>
+    
+    <div class="input-container">
+      <label for="imagen2">C++:</label>
+      <img src="c++.jpg" alt="logo c++" width="100" height="100">
+      <a href="https://www.bloodshed.net/">https://www.bloodshed.net/</a>
+    </div>
+
+    <div class="input-container">
+        <label for="imagen2">SQL:</label>
+        <img src="Sql.png" alt="logo sql" width="100" height="100">
+        <a href="https://www.mysql.com/">https://www.mysql.com/</a>
+      </div>
+
+      <div class="input-container">
+        <label for="imagen2">PYTHON:</label>
+        <img src="Python.png" alt="logo python" width="100" height="100">
+        <a href="https://www.python.org/">https://www.python.org/</a>
+      </div>  
+
+    <!-- Botón de enviar -->
+    <button type="submit">Volver</button>
+  </form>
+</div>
+
+</body>
+</html>

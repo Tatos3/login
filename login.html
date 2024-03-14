@@ -4,31 +4,79 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Iniciar Sesión</title>
+ <style> 
+  /* Estilos para centrar el formulario */
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alineación vertical */
+  }
+
+  .form-container {
+    width: 700px; /* Ancho del contenedor del formulario */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Estilos para los logotipos */
+  .logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre los logotipos y el formulario */
+  }
+
+  .logos-container img {
+    margin-right: 20px; /* Espacio entre los logotipos */
+  }
+  
+
+</style>
+<script>
+  function validarFormulario() {
+    var usuario = document.getElementById('username').value;
+    var contraseña = document.getElementById('password').value;
+
+    if (usuario.trim() === '' || contraseña.trim() === '') {
+      alert('Por favor, completa todos los campos.');
+      return false; // Evita el envío del formulario si hay campos vacíos
+    }
+
+    return true; // Permite el envío del formulario si todos los campos están completos
+  }
+</script>
+
+
 </head>
 <body>
 
 <h1>Iniciar Sesión</h1>
 
-<!-- Primera imagen -->
-<img src="logo-uis.png" alt="logo universidad" width="250" height="200">
-
-<!-- Segunda imagen -->
-<img src="html.png" alt="logo html" width="200" height="200">
+<!-- Contenedor para los logotipos -->
+<div class="logos-container">
+  <!-- Logotipo de la Universidad Industrial de Santander -->
+  <img src="logo-uis.png" alt="logo universidad" width="250" height="200">
+  <!-- Logotipo de HTML -->
+  <img src="html.png" alt="logo html" width="200" height="200">
+</div>
 
 <!-- Campos de Nombre de Usuario y Contraseña -->
-<form>
-    <>
+<div class="form-container">
+  <form action="listas.html" method="get" onsubmit="return validarFormulario()">
       <label for="username">Nombre de Usuario:</label>
       <input type="text" id="username" name="username" placeholder="Ingresa tu nombre de usuario">
       <label for="password">Contraseña:</label>
       <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña">
-    </div>
     <button type="submit">Entrar</button>
   </form>
+</div>
 
-  <!-- Mensaje para restablecer contraseña -->
+<!-- Mensaje para restablecer contraseña -->
 <p>¿Ha olvidado su contraseña? Haga clic <a href="link_para_restablecer_contraseña">aquí</a></p>
-
 <!-- Mensaje de desarrollo -->
 <p>Desarrollado por <a href="https://www.uis.edu.co/">Universidad Industrial de Santander</a></p>
 

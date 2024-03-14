@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frases</title>
+<style>
+  /* Estilos para centrar el formulario */
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alineación vertical */
+    background-color: #f2f2f2; /* Color de fondo claro */
+  }
+
+  .form-container {
+    width: 500px; /* Ancho del contenedor del formulario */
+    flex-direction: column;
+    align-items: center;
+    background-color: white; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno del formulario */
+    border-radius: 10px; /* Bordes redondeados del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+  }
+
+  /* Estilos para el título del formulario */
+  h1 {
+    margin-bottom: 20px; /* Espacio inferior del título */
+  }
+
+  /* Estilos para los campos de entrada y etiquetas */
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espacio entre campos de entrada */
+  }
+
+  .input-container label {
+    width: 120px; /* Ancho fijo para la etiqueta */
+    margin-right: 10px; /* Espacio entre etiqueta y entrada */
+  }
+
+  .input-container input {
+    flex: 1; /* Ocupar el espacio restante */
+  }
+</style>
+</head>
+<body>
+
+<!-- Contenedor para el formulario -->
+<div class="form-container">
+  <!-- Título del formulario -->
+  <h1>Frases</h1>
+  
+  <!-- Formulario -->
+  <form action="listas.html">
+    <!-- Campo de Nombre de Usuario -->
+    <div class="input-container">
+      <label for="usuario">Usuario:</label>
+      <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu nombre de usuario">
+    </div>
+
+<!-- Campo para la primera frase -->
+<div class="input-container">
+    <label for="frase1">Primera frase:</label>
+    <textarea id="frase1" name="frase1" placeholder="Ingresa la primera frase" rows="4" style="width: 300px;"></textarea>
+  </div>
+  
+  <!-- Campo para la segunda frase -->
+  <div class="input-container">
+    <label for="frase2">Segunda frase:</label>
+    <textarea id="frase2" name="frase2" placeholder="Ingresa la segunda frase" rows="4" style="width: 300px;"></textarea>
+  </div>
+  
+  <!-- Selección de la frase principal -->
+  <div class="input-container">
+    <label for="frase_principal">Frase principal:</label>
+    <select id="frase_principal" name="frase_principal">
+      <option value="frase1">Primera frase</option>
+      <option value="frase2">Segunda frase</option>
+    </select>
+  </div>
+  
+  <!-- Contenedor para los botones -->
+<div style="display: flex; justify-content: center; gap: 10px;">
+
+      <!-- Botón de enviar -->
+  <button type="submit">Enviar</button>
+  
+    <!-- Botón para enviar por correo -->
+    <button type="button" onclick="enviarPorCorreo()">Enviar por Correo</button>
+  
+  </div>
+  </form>
+</div>
+
+</body>
+</html>

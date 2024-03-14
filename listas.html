@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Listas</title>
+<style>
+  /* Estilos para centrar el formulario */
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alineación vertical */
+    background-color: #f2f2f2; /* Color de fondo claro */
+  }
+
+  .form-container {
+    width: 500px; /* Ancho del contenedor del formulario */
+    flex-direction: column;
+    align-items: center;
+    background-color: white; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno del formulario */
+    border-radius: 10px; /* Bordes redondeados del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+  }
+
+  /* Estilos para el título del formulario */
+  h1 {
+    margin-bottom: 20px; /* Espacio inferior del título */
+  }
+
+  /* Estilos para los campos de entrada y etiquetas */
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espacio entre campos de entrada */
+  }
+
+  .input-container label {
+    width: 120px; /* Ancho fijo para la etiqueta */
+    margin-right: 10px; /* Espacio entre etiqueta y entrada */
+  }
+
+  .input-container input {
+    flex: 1; /* Ocupar el espacio restante */
+  }
+</style>
+</head>
+<body>
+
+
+<div class="form-container">
+
+  <h1>Listas</h1>
+
+  <form action="login.html" action="#" method="post">
+
+    <!-- Sección de Datos de Usuario -->
+    <fieldset>
+      <legend>FORMULARIOS</legend>
+      <div>
+        <a href="usuario.html" onclick="mostrarFormulario()">-DATOS USUARIO</a>
+      </div>
+      <div>
+        <a href="frases-1.html">-FRASES CELEBRES DE USUARIO</a>
+      </div>
+    </fieldset>
+
+    <!-- Sección de Grillas -->
+    <fieldset>
+      <legend>GRILLAS</legend>
+      <div>
+        <a href="normal.html">-NORMAL</a>
+      </div>
+      <div>   
+        <a href="avanzada.html">-AVANZADA</a>
+      </div>
+    </fieldset>
+
+    <!-- Sección de Imágenes -->
+    <fieldset>
+      <legend>IMÁGENES</legend>
+      <div>
+        <a href="imagenes.html">-IMÁGENES</a>
+      </div>
+    </fieldset>
+
+</div>
+<button type="submit">Salir</button>
+</body>
+</html>
+

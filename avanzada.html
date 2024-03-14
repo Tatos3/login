@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personajes de Comics</title>
+<style>
+  /* Estilos para centrar el formulario */
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alineación vertical */
+    background-color: #f2f2f2; /* Color de fondo claro */
+  }
+
+  .form-container {
+    width: 500px; /* Ancho del contenedor del formulario */
+    flex-direction: column;
+    align-items: center;
+    background-color: white; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno del formulario */
+    border-radius: 10px; /* Bordes redondeados del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+  }
+
+  /* Estilos para el título del formulario */
+  h1 {
+    margin-bottom: 20px; /* Espacio inferior del título */
+  }
+
+  /* Estilos para los campos de entrada y etiquetas */
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espacio entre campos de entrada */
+  }
+
+  .input-container label {
+    width: 120px; /* Ancho fijo para la etiqueta */
+    margin-right: 10px; /* Espacio entre etiqueta y entrada */
+  }
+
+  .input-container input {
+    flex: 1; /* Ocupar el espacio restante */
+  }
+
+    /* Estilos para las tablas */
+    table {
+    width: 100%; /* Ancho de la tabla */
+    border-collapse: collapse; /* Colapso de bordes */
+    margin-top: 20px; /* Espacio superior de la tabla */
+  }
+
+  th, td {
+    border: 1px solid #dddddd; /* Borde de las celdas */
+    padding: 8px; /* Espaciado interno de las celdas */
+    text-align: left; /* Alineación de texto a la izquierda */
+    text-align: center;
+  }
+
+  th {
+    background-color: #f2f2f2; /* Color de fondo de las celdas de encabezado */
+  }
+</style>
+</head>
+<body>
+
+<!-- Contenedor para el formulario -->
+<div class="form-container">
+  <!-- Título del formulario -->
+  <h1>Personajes de Comics</h1>
+
+  <form action="listas.html">
+  
+  <table border="1" style="width:100%">
+    <colgroup>
+        <col style="width: 20%"/>
+        <col style="width: 40%"/>
+        <col style="width: 40%"/>
+    </colgroup>
+    <thead>
+        <tr>
+            <th rowspan="2">Nombre</th>
+            <th colspan="2">DC</th>
+        </tr>
+        <tr>
+            <th>Identidad secreta</th>
+            <th>link</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td colspan="3">Pie de tabla.</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Superman</td>
+            <td>Clark kent</td>
+            <td>DC</td>
+        </tr>
+        <tr>
+            <td>Batman</td>
+            <td>Bruce wayne</td>
+            <td>DC</td>
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th rowspan="2">Nombre</th>
+            <th colspan="2">MARVEL</th>
+        </tr>
+        <tr>
+            <th>Identidad secreta</th>
+            <th>link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Cap America</td>
+            <td>Steve Rogers</td>
+            <td>MARVEL</td>
+        </tr>
+        <tr>
+            <td>Spiderman</td>
+            <td>Peter Parker</td>
+            <td>MARVEL</td>
+        </tr>
+    </tbody>
+</table> 
+
+  <!-- Botón de volver -->
+  <button type="submit">Volver</button>
+</div>
+
+</body>
+</html>

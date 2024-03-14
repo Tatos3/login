@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Iniciar Sesión</title>
+   <style>
+      /* Estilos para centrar el formulario */
+      body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; /* Alineación vertical */
+      background-color: #f2f2f2; /* Color de fondo claro */
+      }
+
+      .form-container {
+      width: 500px; /* Ancho del contenedor del formulario */
+      flex-direction: column;
+      align-items: center;
+      background-color: white; /* Color de fondo del formulario */
+      padding: 20px; /* Espaciado interno del formulario */
+      border-radius: 10px; /* Bordes redondeados del formulario */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+      }
+
+      /* Estilos para el título del formulario */
+      h1 {
+      margin-bottom: 20px; /* Espacio inferior del título */
+      }
+
+      /* Estilos para los campos de entrada y etiquetas */
+      .input-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px; /* Espacio entre campos de entrada */
+      }
+
+  .input-container label {
+    width: 120px; /* Ancho fijo para la etiqueta */
+    margin-right: 10px; /* Espacio entre etiqueta y entrada */
+  }
+
+  .input-container input {
+    flex: 1; /* Ocupar el espacio restante */
+  }
+
+  /* Estilos para los botones */
+  .botones {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+  }
+</style>
+<script>
+    function limpiarFormulario() {
+        document.getElementById("miFormulario").reset();
+        alert("Datos borrados correctamente");
+    }
+
+    function guardarCambios() {
+    // Aquí puedes agregar el código para guardar los cambios
+    alert("Cambios guardados correctamente");
+  }
+</script>
+
+</head>
+<body>
+
+<!-- Contenedor para el formulario -->
+<div class="form-container" id="formulario">
+  <!-- Título del formulario -->
+  <h1>RELLENA TU CV</h1>
+  
+  <!-- Formulario -->
+  <form id="miFormulario" action="listas.html">
+   
+    <!-- Campo de Nombre -->
+    <div class="input-container">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+    </div>
+    
+    <!-- Campo de Apellido -->
+    <div class="input-container">
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido">
+    </div>
+
+     <!-- Campo de Contraseña -->
+     <div class="input-container">
+     <label for="contraseña">Contraseña:</label>
+      <input type="password" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña">
+    </div>
+      
+    <!-- Campo de Confirmar Contraseña -->
+    <div class="input-container">
+    <label for="confirmar_contraseña">Confirmar Contraseña:</label>
+     <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" placeholder="Confirma tu contraseña">
+    </div>
+
+      <!-- Campo de Tipo de Identificación -->
+      <div class="input-container">
+        <label for="tipo_identificacion">Tipo de Identificación:</label>
+        <select id="tipo_identificacion" name="tipo_identificacion">
+          <option value="ti">T.I.</option>
+          <option value="cc">C.C.</option>
+        </select>
+      <input type="text" id="numero_identificacion" name="numero_identificacion" placeholder="Ingresa tu número de identificación">
+      </div>
+
+      <!-- Campo para seleccionar el sexo -->
+<div class="input-container">
+    <label>Sexo:</label>
+    <div>
+      <input type="radio" id="hombre" name="sexo" value="hombre">
+      <label for="hombre">Hombre</label>
+    </div>
+    <div>
+      <input type="radio" id="mujer" name="sexo" value="mujer">
+      <label for="mujer">Mujer</label>
+    </div>
+  </div>
+
+  <!-- Campo para subir la foto -->
+   <div class="input-container">
+    <label for="foto">Mi Foto:</label>
+    <input type="file" id="foto" name="foto">
+  </div>
+
+ <!-- Campo para seleccionar la ocupación -->
+<div class="input-container">
+    <label>Ocupación:</label>
+    <div>
+      <input type="checkbox" id="estudiante" name="ocupacion" value="estudiante">
+      <label for="estudiante">Estudiante</label>
+    </div>
+    <!-- Puedes agregar más opciones aquí si es necesario -->
+  </div>
+
+    <fieldset>
+        <legend>DATOS PERSONALES</legend>
+         <!-- Campo para seleccionar el departamento -->
+         <div class="input-container">
+         <label for="departamento">Departamento:</label>
+         <select id="departamento" name="departamento">
+         <option value="Amazonas">Santander</option>
+         <option value="Antioquia">Antioquia</option>
+         <option value="Arauca">Boyaca</option>
+         </select>
+         </div>
+
+         <!-- Campo para la fecha de nacimiento -->
+         <div class="input-container">
+         <label>Fecha de Nacimiento:</label>
+         <!-- Campo para el día -->
+         <input type="text" id="dia" name="dia" placeholder="Día" maxlength="2" style="width: 40px;">
+         <!-- Campo para el mes -->
+          <select id="mes" name="mes">
+         <option value="Enero">Enero</option>
+         <option value="Febrero">Febrero</option>
+         <!-- Agrega las opciones para los otros meses -->
+         </select>
+         <!-- Campo para el año -->
+         <input type="text" id="anio" name="anio" placeholder="Año" maxlength="4" style="width: 60px;">
+         </div>
+         
+ <!-- Campo para los temas de interés -->
+<div class="input-container">
+    <label for="temas">Temas de Interés:</label>
+    <select id="temas" name="temas">
+      <option value="administracion">Administración de Base de Datos</option>
+      <option value="analisis_programacion">Análisis y Programación</option>
+      <option value="arquitectura">Arquitectura</option>
+      <!-- Agrega más opciones aquí si es necesario -->
+    </select>
+  </div>
+
+</fieldset>
+
+
+  </div>
+
+  <div>
+    <div class="botones">
+      <!-- Botón para guardar cambios -->
+      <button type="button" onclick="guardarCambios()">Guardar Cambios</button>
+  
+      <!-- Botón para borrar los datos -->
+      <button type="button" onclick="limpiarFormulario()">Borrar Datos</button>
+  
+      <button type="submit">Volver</button>
+    </div>
+    </div>
+  </form>
+</body>
+</html>
+
