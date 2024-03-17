@@ -12,45 +12,45 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column; /* Alineación vertical */
-      background-color: #f2f2f2; /* Color de fondo claro */
+      flex-direction: column; 
+      background-color: #f2f2f2; 
       }
 
       .form-container {
       width: 500px; /* Ancho del contenedor del formulario */
       flex-direction: column;
       align-items: center;
-      background-color: white; /* Color de fondo del formulario */
-      padding: 20px; /* Espaciado interno del formulario */
-      border-radius: 10px; /* Bordes redondeados del formulario */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+      background-color: white; 
+      padding: 20px; 
+      border-radius: 10px; 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
       }
 
-      /* Estilos para el título del formulario */
+      
       h1 {
-      margin-bottom: 20px; /* Espacio inferior del título */
+      margin-bottom: 20px; 
       }
 
       /* Estilos para los campos de entrada y etiquetas */
       .input-container {
       display: flex;
       align-items: center;
-      margin-bottom: 10px; /* Espacio entre campos de entrada */
+      margin-bottom: 10px; 
       }
 
   .input-container label {
-    width: 120px; /* Ancho fijo para la etiqueta */
-    margin-right: 10px; /* Espacio entre etiqueta y entrada */
+    width: 120px; 
+    margin-right: 10px; 
   }
 
   .input-container input {
-    flex: 1; /* Ocupar el espacio restante */
+    flex: 1; 
   }
 
   /* Estilos para los botones */
   .botones {
     display: flex;
-    gap: 10px; /* Espacio entre los botones */
+    gap: 10px; 
   }
 </style>
 <script>
@@ -60,7 +60,6 @@
     }
 
     function guardarCambios() {
-    // Aquí puedes agregar el código para guardar los cambios
     alert("Cambios guardados correctamente");
   }
 </script>
@@ -70,7 +69,7 @@
 
 <!-- Contenedor para el formulario -->
 <div class="form-container" id="formulario">
-  <!-- Título del formulario -->
+ 
   <h1>RELLENA TU CV</h1>
   
   <!-- Formulario -->
@@ -136,7 +135,6 @@
       <input type="checkbox" id="estudiante" name="ocupacion" value="estudiante">
       <label for="estudiante">Estudiante</label>
     </div>
-    <!-- Puedes agregar más opciones aquí si es necesario -->
   </div>
 
     <fieldset>
@@ -160,7 +158,6 @@
           <select id="mes" name="mes">
          <option value="Enero">Enero</option>
          <option value="Febrero">Febrero</option>
-         <!-- Agrega las opciones para los otros meses -->
          </select>
          <!-- Campo para el año -->
          <input type="text" id="anio" name="anio" placeholder="Año" maxlength="4" style="width: 60px;">
@@ -173,7 +170,6 @@
       <option value="administracion">Administración de Base de Datos</option>
       <option value="analisis_programacion">Análisis y Programación</option>
       <option value="arquitectura">Arquitectura</option>
-      <!-- Agrega más opciones aquí si es necesario -->
     </select>
   </div>
 

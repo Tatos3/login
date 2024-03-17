@@ -5,18 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Iniciar Sesión</title>
  <style> 
-  /* Estilos para centrar el formulario */
   body, html {
     height: 100%;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Alineación vertical */
+    flex-direction: column; 
   }
 
   .form-container {
-    width: 700px; /* Ancho del contenedor del formulario */
+    width: 700px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,11 +26,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px; /* Espacio entre los logotipos y el formulario */
+    margin-bottom: 20px; 
   }
 
   .logos-container img {
-    margin-right: 20px; /* Espacio entre los logotipos */
+    margin-right: 20px;
   }
   
 
@@ -43,10 +42,10 @@
 
     if (usuario.trim() === '' || contraseña.trim() === '') {
       alert('Por favor, completa todos los campos.');
-      return false; // Evita el envío del formulario si hay campos vacíos
+      return false;
     }
 
-    return true; // Permite el envío del formulario si todos los campos están completos
+    return true; 
   }
 </script>
 
@@ -58,9 +57,9 @@
 
 <!-- Contenedor para los logotipos -->
 <div class="logos-container">
-  <!-- Logotipo de la Universidad Industrial de Santander -->
+  <!-- Logo universidad -->
   <img src="logo-uis.png" alt="logo universidad" width="250" height="200">
-  <!-- Logotipo de HTML -->
+  <!-- Logo de HTML -->
   <img src="html.png" alt="logo html" width="200" height="200">
 </div>
 
@@ -77,7 +76,7 @@
 
 <!-- Mensaje para restablecer contraseña -->
 <p>¿Ha olvidado su contraseña? Haga clic <a href="link_para_restablecer_contraseña">aquí</a></p>
-<!-- Mensaje de desarrollo -->
+<!-- logo universidad -->
 <p>Desarrollado por <a href="https://www.uis.edu.co/">Universidad Industrial de Santander</a></p>
 
 </body>
